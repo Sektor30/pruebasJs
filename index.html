@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partido de Futbol</title>
 
-    <h1>Futbol</h1>
+    <h1>Futbol </h1>
+    <h2>Maquina de medición de Indice de masa corporal</h2>
 </head>
 <body>
     
@@ -39,7 +40,10 @@ imprimir("El total de puntos del equipo es: " + puntosTotal);
 
 */
 
+
+/*
 // IF - ELSE
+
 
 var victorias = parseInt(prompt("Informe la cantidad de victorias: "));
 var empates = parseInt(prompt("Informe la cantidad de empates: "));
@@ -60,7 +64,106 @@ if (puntosTotal == 28 ) {
 imprimir("El quipo esta igual  que el año pasado " );
 }
 
+*/
 
+
+//RETOMAR PROYECTO INDICE DE MASA CORPORAL Y AGREGAR CONDICIONALES
+
+
+
+
+
+     /*
+
+
+    
+     //--VARIABLES BASE PARA INFORMAR AL USUARIO LAS PREGUNTAS PROPUESTAS--
+     
+        function calcularImc(peso,altura){
+         return peso/(altura*altura);
+
+     }
+     nombre =  prompt("Informe su nombre");
+     pesoInformado = prompt(nombre + " , Informe su peso");
+     alturaInformada= prompt(nombre + " , Informe su altura");
+
+     imcCalculado = calcularImc(pesoInformado,alturaInformada)
+
+     imprimir(nombre + " el indice calculado de masa corporal tuyo es: "+ imcCalculado); 
+
+     //imprimir("El promedio del imc calculado de Andres y Carlos es: " + (calcularImcP3(78, 1.60)+ calcularImcP3(77, 1.80))/2 );
+     
+    
+     //CALCULAR CONDICIONALES DEL IMC DE LA OMS-ONU PRIMERA PARTE
+
+
+       if (imcCalculado < 18.5) {
+                imprimir(" IMC abajo de lo recomendado");
+            }
+       if (imcCalculado >= 18.5) {
+                if (imcCalculado < 25){
+                imprimir("El IMC esta dentro del intervalo normal");
+                }
+            }
+       
+       if (imcCalculado >= 25) {
+                if (imcCalculado < 30){
+                imprimir("El IMC considerado como sobrepeso");
+                }
+            }
+       
+
+        if (imcCalculado >= 30.5) {
+                imprimir("IMC considerado como obesidad");
+            }
+
+            */
+
+
+
+
+//VARIABLES ORGANIZADAS PARA RESPONDER EN NUMEROS NATURALES
+
+function calcularImc(peso,altura){
+         return peso/(altura*altura);
+
+     }
+     
+     nombre =  prompt("Informe su nombre");
+     pesoInformado = parseInt(prompt(nombre + " , Informe su peso"));
+     alturaInformada= prompt(nombre + " , Informe su altura");
+
+     imcCalculado = parseInt(calcularImc(pesoInformado,alturaInformada))
+
+     imprimir(nombre + " el indice calculado de masa corporal tuyo es: "+ imcCalculado); 
+
+     //imprimir("El promedio del imc calculado de Andres y Carlos es: " + (calcularImcP3(78, 1.60)+ calcularImcP3(77, 1.80))/2 );
+     
+     
+
+
+     //CALCULAR CONDICIONALES DEL IMC DE LA OMS-ONU PRIMERA PARTE
+
+
+       if (imcCalculado < 18.5) {
+                imprimir(" IMC abajo de lo recomendado");
+            }
+       if (imcCalculado >= 18.5) {
+                if (imcCalculado < 25){
+                imprimir("El IMC esta dentro del intervalo normal");
+                }
+            }
+       
+       if (imcCalculado >= 25) {
+                if (imcCalculado < 30){
+                imprimir("El IMC considerado como sobrepeso");
+                }
+            }
+       
+
+        if (imcCalculado >= 30.5) {
+                imprimir("IMC considerado como obesidad");
+            }
 
     
 </Script>

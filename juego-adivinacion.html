@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Trick game</h1>
+</body>
+<script>
+
+//FUNCIONES ANTERIORES
+
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+
+}
+
+/*
+
+// -- JUEGO CON CONDICIONALES  IF - IF
+
+var numeroPensado = Math.round(Math.random()*10);
+var numeroLanzado = parseInt(prompt("ingrese un número entre 0-9"))
+
+if (numeroPensado == numeroLanzado){
+        imprimir ("usted acertó")
+
+}
+
+if( numeroPensado != numeroLanzado){
+    imprimir("usted erró. el numero pensado era " + numeroPensado)
+}
+
+*/
+
+
+// -- JUEGO CON CONDICIONALES  IF - ELSE
+
+var numeroPensado = Math.round(Math.random()*10);
+var numeroLanzado = parseInt(prompt("ingrese un número entre 0-9"))
+
+if (numeroPensado == numeroLanzado){
+        imprimir ("usted acertó")
+
+}
+
+else{
+    imprimir("usted erró. el numero pensado era " + numeroPensado)
+}
+
+
+
+
+
+
+</script>
+
+
+</html>
