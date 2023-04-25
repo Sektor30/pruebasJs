@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+</head>
+<body>
+    <h1>Calcular tabla de multiplicar</h1>
+</body>
+<script>
+
+//FUNCIONES ANTERIORES
+
+/*
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+
+}
+
+
+
+var multiplicador = 5
+
+
+while( multiplicador <= 10) {
+        
+        imprimir (5*multiplicador);
+        multiplicador=multiplicador +1;
+        
+
+}
+
+imprimir("fin")
+
+*/
+
+
+
+function saltarlinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+
+
+function imprimir(frase) {
+    document.write(frase);
+    saltarlinea();
+
+}
+
+
+
+
+imprimir("WHILE");
+var multiplicador = parseInt(prompt( "escribe un numero y haremos la multiplicaciòn x5"))
+
+
+while( multiplicador <= 10) {
+    
+    imprimir (5*multiplicador);
+    multiplicador++;
+    
+    
+}
+
+imprimir("fin")
+
+/**/
+
+
+//--CONDICIONAL FOR  
+// se puede cambiar multiplicador=multiplicador + 1 por  multiplicador++
+
+imprimir("FOR1");
+
+for (var multiplicador =1; multiplicador <= 10; multiplicador++ ){
+
+    imprimir (9 *multiplicador);
+
+}
+
+
+//--CONDICIONAL FOR  con PREGUNTA A USUARIO DE NUMEROS A CALCULAR 
+
+var numeroElegido = parseInt(prompt("2. Elige un número para calcular su tabla : "))
+
+imprimir("FOR2");
+
+for (var multiplicador =1; multiplicador <= 10; multiplicador=multiplicador + 1 ){
+
+    imprimir (numeroElegido *multiplicador);
+
+}
+
+
+
+
+
+</script>
+
+
+</html>
