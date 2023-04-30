@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juegoSecreto</title>
+</head>
+<body>
+<h1> comunicación con usuario</h1>
+
+<input/>
+
+<button>
+   verificar si acertó 
+</button>
+    
+</body>
+
+<script>
+
+// var secreto = Math.round(Math.random()*10);
+
+
+/*
+
+//ARREGLOS = ARRAY [] , SON AQUEL LISTADO DE OBJETOS ORGANIZADOS SECUENCIALMENTE
+var secretos = [3,5,7,9];
+
+var input = document.querySelector("input");
+// CUANDO SE PONE EL FOCO (input.focus();) SE SITUA EL CURSOR EN ESTE PUNTO
+input.focus();
+
+function verificar(){
+
+   
+// ITERACIONES 
+for(var posicion=0 ; posicion < 4; posicion++ ){
+   
+    if  (parseInt(input.value)==secretos[posicion] ) {
+        alert("usted acertó");
+        break;
+    }
+    else {
+        alert("usted erró");
+         //ALTERNATIVA DE REVISION
+            // document.write("su numero "+ secreto);      
+         
+    } 
+
+}
+
+    input.value= "";
+    input.focus();
+}
+
+var button= document.querySelector("button");
+button.onclick = verificar;
+
+*/
+
+function aleatorio() {
+
+    return Math.round(Math.random()*10);
+}
+
+
+function sortearNumeros(cantidad){
+        var secretos =[];
+        var contador =1;
+    
+    while (contador<=cantidad){
+        numeroAleatorio = aleatorio();
+
+        secretos.push(numeroAleatorio);
+        contador ++;
+    }
+    
+    return secretos
+
+}
+ 
+
+// ARREGLOS CON VARIABLES SECRETOS MODIFICABLES
+var secretos = sortearNumeros(4);
+
+console.log(secretos);
+
+
+var input = document.querySelector("input");
+// CUANDO SE PONE EL FOCO (input.focus();) SE SITUA EL CURSOR EN ESTE PUNTO
+input.focus();
+
+function verificar(){
+
+   
+// ITERACIONES 
+for(var posicion=0 ; posicion < secretos.length; posicion++ ){
+   
+    if  (parseInt(input.value)==secretos[posicion] ) {
+        alert("usted acertó");
+        break;
+    }
+    else {
+        alert("usted erró");
+         //ALTERNATIVA DE REVISION
+            // document.write("su numero "+ secreto);      
+         
+    } 
+
+}
+
+    input.value= "";
+    input.focus();
+}
+
+var button= document.querySelector("button");
+button.onclick = verificar;
+
+
+
+
+
+
+</script>
+</html>
